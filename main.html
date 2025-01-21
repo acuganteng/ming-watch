@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MingWatch</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light navbar1 border-bottom">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="main.html">Ming - Watch</a>
+    
+            <!-- Toggle button for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="main.html">Utama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="main.html#produk-unggulan">Produk Unggulan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="game.html">Game</a>
+                    </li>
+                </ul>
+    
+                <!-- Search Bar -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="gambar/cartier.webp" class="d-block w-100" alt="Slide 1" height="450">
+            </div>
+            <div class="carousel-item">
+                <img src="gambar/49073c_3727783bcaa744cb9075249a6d6c7cc1~mv2.avif" class="d-block w-100" alt="Slide 2" height="450">
+            </div>
+            <div class="carousel-item">
+                <img src="gambar/s.avif" class="d-block w-100" alt="Slide 3" height="450">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-4 my-5">
+        <div class="row justify-content-center align-items-center">
+            <!-- Gambar 1 -->
+            <div class="col-auto mx-5">
+                <img src="gambar/logo rolex.png" alt="Rolex" class="img-fluid rounded hover-effect" data-bs-toggle="modal" data-bs-target="#modalRolex" style="max-height: 150px;">
+            </div>
+            <!-- Gambar 2 -->
+            <div class="col-auto mx-5">
+                <img src="gambar/Cartier-Emblem.png" alt="Cartier" class="img-fluid rounded hover-effect" data-bs-toggle="modal" data-bs-target="#modalCartier" style="max-height: 150px;">
+            </div>
+            <!-- Gambar 3 -->
+            <div class="col-auto mx-5">
+                <img src="gambar/patek-philippe.svg" alt="Patek Philippe" class="img-fluid rounded hover-effect" data-bs-toggle="modal" data-bs-target="#modalPatek" style="max-height: 150px;">
+            </div>
+            <!-- Gambar 4 -->
+            <div class="col-auto mx-5">
+                <img src="gambar/richardm.png" alt="Richard Mille" class="img-fluid rounded hover-effect" data-bs-toggle="modal" data-bs-target="#modalRichard" style="max-height: 150px;">
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Modal Rolex -->
+<div class="modal fade" id="modalRolex" tabindex="-1" aria-labelledby="modalRolexLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalRolexLabel">Detail Rolex</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="gambar/logo rolex.png" class="img-fluid" alt="Rolex">
+                <p class="mt-3">Rolex adalah merek jam tangan mewah yang terkenal di dunia.</p>
+                <a href="rolex.html" class="btn btn-primary">Lihat Produk</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Cartier -->
+<div class="modal fade" id="modalCartier" tabindex="-1" aria-labelledby="modalCartierLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalCartierLabel">Detail Cartier</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="gambar/Cartier-Emblem.png" class="img-fluid" alt="Cartier">
+                <p class="mt-3">Cartier adalah merek perhiasan dan jam tangan mewah yang terkenal.</p>
+                <a href="cartier.html" class="btn btn-primary">Lihat Produk</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Patek Philippe -->
+<div class="modal fade" id="modalPatek" tabindex="-1" aria-labelledby="modalPatekLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalPatekLabel">Detail Patek Philippe</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="gambar/patek-philippe.svg" class="img-fluid" alt="Patek Philippe">
+                <p class="mt-3">Patek Philippe adalah merek jam tangan mewah asal Swiss.</p>
+                <a href="pp.html" class="btn btn-primary">Lihat Produk</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Richard Mille -->
+<div class="modal fade" id="modalRichard" tabindex="-1" aria-labelledby="modalRichardLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalRichardLabel">Detail Richard Mille</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="gambar/richardm.png" class="img-fluid" alt="Richard Mille">
+                <p class="mt-3">Richard Mille terkenal dengan desain inovatif dan mewah.</p>
+                <a href="rm.html" class="btn btn-primary">Lihat Produk</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="produk-unggulan" class="container my-5">
+    <h2 class="text-center my-5">Produk Unggulan</h2>
+    <div class="row">
+        <!-- Produk 1 -->
+        <div class="col-md-3">
+            <div class="card hover-effect">
+                <img src="gambar/jam rolex.avif" class="card-img-top" alt="Produk 1" style="height: 350px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#modalDaytona">
+                <div class="card-body">
+                    <h5 class="card-title">Rolex Daytona (Oystersteel)</h5>
+                    <p class="card-text">Rp. 512.000.000</p>
+                    <a href="cekot.html" class="btn btn-primary">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+        <!-- Produk 2 -->
+        <div class="col-md-3">
+            <div class="card hover-effect">
+                <img src="gambar/cartier panthere.avif" class="card-img-top" alt="Produk 2" style="height: 350px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#modalPanthere">
+                <div class="card-body">
+                    <h5 class="card-title">Cartier Panthere Steel</h5>
+                    <p class="card-text">Rp. 87.000.000</p>
+                    <a href="cekot.html" class="btn btn-primary">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+        <!-- Produk 3 -->
+        <div class="col-md-3 hover-effect">
+            <div class="card">
+                <img src="gambar/nautilus.jpg" class="card-img-top" alt="Produk 3" style="height: 350px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#modalNautilus">
+                <div class="card-body">
+                    <h5 class="card-title">Patek Philippe Nautilus Moon</h5>
+                    <p class="card-text">Rp. 1.420.000.000</p>
+                    <a href="cekot.html" class="btn btn-primary">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+        <!-- Produk 4 -->
+        <div class="col-md-3 hover-effect">
+            <div class="card">
+                <img src="gambar/rm diamond.jpg_date=2019-07-12" class="card-img-top" alt="Produk 4" style="height: 350px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#modalDiamond">
+                <div class="card-body">
+                    <h5 class="card-title">RM Diamond Tourbillon</h5>
+                    <p class="card-text">Rp. 9.500.000.000</p>
+                    <a href="cekot.html" class="btn btn-primary">Beli Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Modal Daytona -->
+<div class="modal fade" id="modalDaytona" tabindex="-1" aria-labelledby="modalDaytonaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Header Modal -->
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="modalDaytonaLabel">Spesifikasi Rolex Daytona</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Body Modal -->
+            <div class="modal-body text-center">
+                <!-- Gambar Produk -->
+                <img src="gambar/jam rolex.avif" class="img-fluid rounded mb-3" alt="Rolex Daytona" style="max-height: 350px; object-fit: cover;">
+                
+                <!-- Deskripsi Produk -->
+                <p class="text-start">
+                    Rolex Daytona adalah jam tangan ikonik yang menggabungkan desain elegan dengan fungsi canggih. Dikenal sebagai pilihan utama para pembalap, Daytona dilengkapi dengan chronograph dan bezel tachymeter untuk mengukur waktu dan kecepatan. 
+                </p>
+                <p class="text-start">
+                    Dengan kualitas Rolex yang tak tertandingi, jam ini menjadi simbol prestise, ketepatan, dan daya tahan. Dirancang untuk penggemar otomotif dan kolektor, Rolex Daytona adalah investasi yang akan tetap bernilai sepanjang waktu.
+                </p>
+                
+                <!-- Spesifikasi Produk -->
+                <h6 class="fw-bold mt-4">Spesifikasi:</h6>
+                <ul class="text-start">
+                    <li><strong>Model:</strong> Rolex Daytona Oystersteel </li>
+                    <li><strong>Diameter Kasus:</strong> 40 mm </li>
+                    <li><strong>Material Kasus:</strong> Stainless steel (Oystersteel) atau emas 18k (variasi)</li>
+                    <li><strong>Bezel:</strong> Tachymeter, terbuat dari logam atau keramik </li>
+                    <li><strong>Gerakan:</strong> Otomatis (kaliber Rolex 4130) </li>
+                    <li><strong>Fungsi:</strong> Jam, menit, detik, chronograph </li>
+                    <li><strong>Cakupan Tahan Air:</strong> 100 meter </li>
+                    <li><strong>Lengan Tali:</strong> Stainless steel Oyster atau kulit </li>
+                    <li><strong>Tampilan:</strong> Dial dengan 3 sub-dial untuk chronograph </li>
+                    <li><strong>Kaca:</strong> Sapphire anti gores </li>
+                    <li><strong>Ketahanan:</strong> 48 jam cadangan daya </li>
+                    <li><strong>Harga:</strong> Rp. 512.000.000 </li>
+                </ul>
+                
+                <!-- Tombol -->
+                <a href="cekot.html" class="btn btn-primary mt-3">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Panthère -->
+<div class="modal fade" id="modalPanthere" tabindex="-1" aria-labelledby="modalPanthereLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Header Modal -->
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="modalPanthereLabel">Spesifikasi Cartier Panthère Watch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Body Modal -->
+            <div class="modal-body text-center">
+                <!-- Gambar Produk -->
+                <img src="gambar/cartier panthere.avif" class="img-fluid rounded mb-3" alt="Cartier Panthère" style="max-height: 350px; object-fit: cover;">
+                
+                <!-- Deskripsi Produk -->
+                <p class="text-start">
+                    Cartier Panthère adalah jam tangan yang dirancang untuk wanita modern yang menghargai keanggunan dan kemewahan. Dikenal dengan desainnya yang ikonik, jam ini memiliki bentuk casing yang ramping dengan rantai gelang yang fleksibel, menciptakan tampilan yang memadukan gaya klasik dan modern.
+                </p>
+                <p class="text-start">
+                    Dengan material berkualitas tinggi seperti emas 18k, stainless steel, atau kombinasi keduanya, Cartier Panthère adalah simbol keanggunan abadi. Cocok untuk acara formal maupun kasual, jam tangan ini tidak hanya menjadi aksesori, tetapi juga pernyataan gaya.
+                </p>
+                
+                <!-- Spesifikasi Produk -->
+                <h6 class="fw-bold mt-4">Spesifikasi:</h6>
+                <ul class="text-start">
+                    <li><strong>Model:</strong> Cartier Panthère de Cartier</li>
+                    <li><strong>Diameter Kasus:</strong> 22 mm atau 27 mm (tergantung model)</li>
+                    <li><strong>Material Kasus:</strong> Stainless steel atau emas 18k (variasi kombinasi tersedia)</li>
+                    <li><strong>Bezel:</strong> Polos atau bertatahkan berlian</li>
+                    <li><strong>Gerakan:</strong> Quartz (presisi tinggi)</li>
+                    <li><strong>Fungsi:</strong> Jam dan menit</li>
+                    <li><strong>Cakupan Tahan Air:</strong> Hingga 30 meter</li>
+                    <li><strong>Gelang:</strong> Rantai fleksibel dengan material stainless steel atau emas</li>
+                    <li><strong>Tampilan:</strong> Dial dengan angka Romawi dan jarum berbentuk pedang</li>
+                    <li><strong>Kaca:</strong> Sapphire anti gores</li>
+                    <li><strong>Ketahanan:</strong> Tidak memerlukan pengaturan ulang yang sering</li>
+                    <li><strong>Harga:</strong> Rp. 87.000.000</li>
+                </ul>
+                
+                <!-- Tombol -->
+                <a href="cekot.html" class="btn btn-primary mt-3">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Nautilus -->
+<div class="modal fade" id="modalNautilus" tabindex="-1" aria-labelledby="modalNautilusLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Header Modal -->
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="modalNautilusLabel">Spesifikasi Patek Philippe Nautilus Moon Phase</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Body Modal -->
+            <div class="modal-body text-center">
+                <!-- Gambar Produk -->
+                <img src="gambar/nautilus.jpg" class="img-fluid rounded mb-3" alt="Patek Philippe Nautilus Moon Phase" style="max-height: 350px; object-fit: cover;">
+                
+                <!-- Deskripsi Produk -->
+                <p class="text-start">
+                    Patek Philippe Nautilus Moon Phase adalah jam tangan mewah dengan desain legendaris yang menggabungkan keindahan estetika dan teknologi horologi tingkat tinggi. Dikenal karena bentuknya yang ikonik dan desain yang elegan, model ini dilengkapi dengan fungsi moon phase yang menambah keanggunan dan keunikan.
+                </p>
+                <p class="text-start">
+                    Dengan dial biru yang menawan dan pembacaan waktu yang presisi, Patek Philippe Nautilus Moon Phase adalah jam tangan yang cocok bagi kolektor dan penggemar horologi yang mencari prestise dan kualitas. Kombinasi stainless steel dan emas putih menambah sentuhan kemewahan yang tidak tertandingi.
+                </p>
+                
+                <!-- Spesifikasi Produk -->
+                <h6 class="fw-bold mt-4">Spesifikasi:</h6>
+                <ul class="text-start">
+                    <li><strong>Model:</strong> Patek Philippe Nautilus Moon Phase Ref. 5712</li>
+                    <li><strong>Diameter Kasus:</strong> 40 mm</li>
+                    <li><strong>Material Kasus:</strong> Stainless steel dengan bezel emas putih 18k</li>
+                    <li><strong>Fungsi:</strong> Jam, menit, detik, moon phase, tanggal, dan power reserve indicator</li>
+                    <li><strong>Gerakan:</strong> Otomatis (kaliber Patek Philippe 240 PS IRM C LU)</li>
+                    <li><strong>Power Reserve:</strong> 48 jam</li>
+                    <li><strong>Cakupan Tahan Air:</strong> 60 meter</li>
+                    <li><strong>Gelang:</strong> Stainless steel dengan paduan emas putih</li>
+                    <li><strong>Tampilan:</strong> Dial biru dengan moon phase indicator dan tanggal pada posisi 7 o'clock</li>
+                    <li><strong>Kaca:</strong> Sapphire anti gores</li>
+                    <li><strong>Harga:</strong> Rp. 1.420.000.000;</li>
+                </ul>
+                
+                <!-- Tombol -->
+                <a href="cekot.html" class="btn btn-primary mt-3">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Richard Mille Diamond Tourbillon -->
+<div class="modal fade" id="modalDiamond" tabindex="-1" aria-labelledby="modalDiamondLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Header Modal -->
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="modalDiamondLabel">Spesifikasi Richard Mille Diamond Tourbillon</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Body Modal -->
+            <div class="modal-body text-center">
+                <!-- Gambar Produk -->
+                <img src="gambar/rm diamond.jpg_date=2019-07-12" class="img-fluid rounded mb-3" alt="Richard Mille Diamond Tourbillon" style="max-height: 350px; object-fit: cover;">
+                
+                <!-- Deskripsi Produk -->
+                <p class="text-start">
+                    Richard Mille Diamond Tourbillon adalah jam tangan mewah yang menggabungkan keanggunan dan kompleksitas teknis. Dikenal dengan desain inovatif dan bahan-bahan mewah, model ini menggunakan berlian berkualitas tinggi yang menambahkan kemewahan pada desain jam tangan.
+                </p>
+                <p class="text-start">
+                    Menggunakan mekanisme tourbillon yang rumit, jam tangan ini memastikan akurasi waktu yang luar biasa. Dengan kesan futuristik dan elemen berlian yang menonjol, Richard Mille Diamond Tourbillon menjadi pilihan utama bagi para kolektor jam tangan kelas atas dan penggemar horologi yang ingin tampil beda.
+                </p>
+                
+                <!-- Spesifikasi Produk -->
+                <h6 class="fw-bold mt-4">Spesifikasi:</h6>
+                <ul class="text-start">
+                    <li><strong>Model:</strong> Richard Mille RM 56-02 Diamond Tourbillon</li>
+                    <li><strong>Diameter Kasus:</strong> 50 mm</li>
+                    <li><strong>Material Kasus:</strong> Sapphire crystal dan titanium</li>
+                    <li><strong>Fungsi:</strong> Jam, menit, detik, tourbillon</li>
+                    <li><strong>Gerakan:</strong> Manual wind (Tourbillon movement)</li>
+                    <li><strong>Power Reserve:</strong> 72 jam</li>
+                    <li><strong>Cakupan Tahan Air:</strong> 30 meter</li>
+                    <li><strong>Gelang:</strong> Karet atau titanium</li>
+                    <li><strong>Tampilan:</strong> Dial transparan dengan berlian berkeliling dan tourbillon visible</li>
+                    <li><strong>Kaca:</strong> Sapphire crystal dengan lapisan anti-refleksi</li>
+                    <li><strong>Harga:</strong> Rp. 9.500.000.000</li>
+                </ul>
+                
+                <!-- Tombol -->
+                <a href="cekot.html" class="btn btn-primary mt-3">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Logo dan Deskripsi -->
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold">Ming - Watch</h5>
+                <p>Toko jam tangan mewah terpercaya. Temukan koleksi jam tangan terbaik dari merek ternama dunia.</p>
+            </div>
+
+            <!-- Navigasi Cepat -->
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold">Navigasi Cepat</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Beranda</a></li>
+                    <li><a href="#produk" class="text-light text-decoration-none">Koleksi Produk</a></li>
+                    <li><a href="#filter" class="text-light text-decoration-none">Filter Produk</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Kontak Kami</a></li>
+                </ul>
+            </div>
+
+            <!-- Informasi Kontak -->
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold">Hubungi Kami</h5>
+                <p><i class="bi bi-geo-alt-fill me-2"></i>Jalan Sudirman No. 123, Jakarta</p>
+                <p><i class="bi bi-telephone-fill me-2"></i>+62 812 3456 7890</p>
+                <p><i class="bi bi-envelope-fill me-2"></i>support@mingwatch.com</p>
+                <div>
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-light">
+        <div class="text-center">
+            <p class="mb-0">&copy; 2025 Ming - Watch. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>

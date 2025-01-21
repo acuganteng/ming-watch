@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolex - MingWatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleRolex.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light navbar1 border-bottom">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="main.html">Ming - Watch</a>
+    
+            <!-- Toggle button for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="main.html">Utama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html#produk-unggulan">Produk Unggulan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="game.html">Game</a>
+                    </li>
+                </ul>
+    
+                <!-- Search Bar -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section id="filter" class="container my-5">
+        <h2 class="text-center my-4">Filter Produk</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Harga</h5>
+                        <select class="form-select" aria-label="Harga Filter">
+                            <option selected>Pilih Rentang Harga</option>
+                            <option value="1">Rp. 0 - Rp. 5.000.000</option>
+                            <option value="2">Rp. 5.000.000 - Rp. 10.000.000</option>
+                            <option value="3">Rp. 10.000.000 - Rp. 50.000.000</option>
+                            <option value="4">Rp. 50.000.000+</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Status</h5>
+                        <select class="form-select" aria-label="Status Filter">
+                            <option selected>Pilih Status</option>
+                            <option value="1">Tersedia</option>
+                            <option value="2">Habis</option>
+                            <option value="3">Pre-order</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk" class="container my-5">
+        <h3 class="text-center my-5"><img src="gambar/logo rolex.png" alt="Rolex" width="15%"></h3>
+        <div class="row">
+            <!-- Produk 1 -->
+            <div class="col-md-4">
+                <div class="card hover-effect">
+                    <img src="gambar/jam rolex.avif" class="card-img-top" alt="Produk 1" style="height: 350px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#modalDaytona">
+                    <div class="card-body">
+                        <h5 class="card-title">Rolex Daytona (Oystersteel)</h5>
+                        <p class="card-text">Rp. 512.000.000</p>
+                        <a href="cekot.html" class="btn btn-primary">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produk 2 -->
+            <div class="col-md-4">
+                <div class="card hover-effect">
+                    <img src="gambar/daydate.avif" class="card-img-top" alt="Produk 2" style="height: 350px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#modalDayDate">
+                    <div class="card-body">
+                        <h5 class="card-title">Rolex Day-Date 40 (Yellow-Gold)</h5>
+                        <p class="card-text">Rp. 545.000.000</p>
+                        <a href="cekot.html" class="btn btn-primary">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produk 3 -->
+            <div class="col-md-4">
+                <div class="card hover-effect">
+                    <img src="gambar/yacht master.png" class="card-img-top" alt="Produk 3" style="height: 350px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#modalYachtMaster">
+                    <div class="card-body">
+                        <h5 class="card-title">Rolex Yacht-Master (RLX Titanium)</h5>
+                        <p class="card-text">Rp. 545.000.000</p>
+                        <a href="cekot.html" class="btn btn-primary">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Daytona -->
+<div class="modal fade" id="modalDaytona" tabindex="-1" aria-labelledby="modalDaytonaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Header Modal -->
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="modalDaytonaLabel">Spesifikasi Rolex Daytona</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Body Modal -->
+            <div class="modal-body text-center">
+                <!-- Gambar Produk -->
+                <img src="gambar/jam rolex.avif" class="img-fluid rounded mb-3" alt="Rolex Daytona" style="max-height: 350px; object-fit: cover;">
+                
+                <!-- Deskripsi Produk -->
+                <p class="text-start">
+                    Rolex Daytona adalah jam tangan ikonik yang menggabungkan desain elegan dengan fungsi canggih. Dikenal sebagai pilihan utama para pembalap, Daytona dilengkapi dengan chronograph dan bezel tachymeter untuk mengukur waktu dan kecepatan. 
+                </p>
+                <p class="text-start">
+                    Dengan kualitas Rolex yang tak tertandingi, jam ini menjadi simbol prestise, ketepatan, dan daya tahan. Dirancang untuk penggemar otomotif dan kolektor, Rolex Daytona adalah investasi yang akan tetap bernilai sepanjang waktu.
+                </p>
+                
+                <!-- Spesifikasi Produk -->
+                <h6 class="fw-bold mt-4">Spesifikasi:</h6>
+                <ul class="text-start">
+                    <li><strong>Model:</strong> Rolex Daytona Oystersteel </li>
+                    <li><strong>Diameter Kasus:</strong> 40 mm </li>
+                    <li><strong>Material Kasus:</strong> Stainless steel (Oystersteel) atau emas 18k (variasi)</li>
+                    <li><strong>Bezel:</strong> Tachymeter, terbuat dari logam atau keramik </li>
+                    <li><strong>Gerakan:</strong> Otomatis (kaliber Rolex 4130) </li>
+                    <li><strong>Fungsi:</strong> Jam, menit, detik, chronograph </li>
+                    <li><strong>Cakupan Tahan Air:</strong> 100 meter </li>
+                    <li><strong>Lengan Tali:</strong> Stainless steel Oyster atau kulit </li>
+                    <li><strong>Tampilan:</strong> Dial dengan 3 sub-dial untuk chronograph </li>
+                    <li><strong>Kaca:</strong> Sapphire anti gores </li>
+                    <li><strong>Ketahanan:</strong> 48 jam cadangan daya </li>
+                    <li><strong>Harga:</strong> Rp. 512.000.000 </li>
+                </ul>
+                
+                <!-- Tombol -->
+                <a href="cekot.html" class="btn btn-primary mt-3">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Rolex Day-Date 40 Yellow Gold -->
+<div class="modal fade" id="modalDayDate" tabindex="-1" aria-labelledby="modalDayDateLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Header Modal -->
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="modalDayDateLabel">Spesifikasi Rolex Day-Date 40 Yellow Gold</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Body Modal -->
+            <div class="modal-body text-center">
+                <!-- Gambar Produk -->
+                <img src="gambar/daydate.avif" class="img-fluid rounded mb-3" alt="Rolex Day-Date 40 Yellow Gold" style="max-height: 350px; object-fit: cover;">
+                
+                <!-- Deskripsi Produk -->
+                <p class="text-start">
+                    Rolex Day-Date 40 Yellow Gold adalah jam tangan mewah dengan tampilan elegan dan klasik. Dikenal sebagai "The President's Watch", jam ini dirancang dengan material emas kuning 18k, memberikan kesan mewah dan prestisius bagi pemakainya. Dengan fitur tanggal dan hari di dial, Rolex Day-Date 40 memadukan fungsionalitas dan keanggunan dalam satu paket.
+                </p>
+                
+                <!-- Spesifikasi Produk -->
+                <h6 class="fw-bold mt-4">Spesifikasi:</h6>
+                <ul class="text-start">
+                    <li><strong>Model:</strong> Rolex Day-Date 40 Yellow Gold</li>
+                    <li><strong>Diameter Kasus:</strong> 40 mm</li>
+                    <li><strong>Material Kasus:</strong> Emas 18k (Yellow Gold)</li>
+                    <li><strong>Bezel:</strong> Emas 18k (Polished)</li>
+                    <li><strong>Gerakan:</strong> Otomatis (Kaliber 3255)</li>
+                    <li><strong>Fungsi:</strong> Jam, menit, detik, tanggal, dan hari</li>
+                    <li><strong>Cakupan Tahan Air:</strong> 100 meter</li>
+                    <li><strong>Lengan Tali:</strong> Emas 18k (President Bracelet)</li>
+                    <li><strong>Tampilan:</strong> Dial dengan tampilan hari dan tanggal</li>
+                    <li><strong>Kaca:</strong> Sapphire anti gores</li>
+                    <li><strong>Ketahanan:</strong> 70 jam cadangan daya</li>
+                    <li><strong>Harga:</strong> Tergantung material dan variasi (kisaran harga tinggi)</li>
+                </ul>
+                
+                <!-- Tombol -->
+                <a href="cekot.html" class="btn btn-primary mt-3">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Rolex Yacht-Master RLX Titanium -->
+<div class="modal fade" id="modalYachtMaster" tabindex="-1" aria-labelledby="modalYachtMasterLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Header Modal -->
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="modalYachtMasterLabel">Spesifikasi Rolex Yacht-Master RLX Titanium</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Body Modal -->
+            <div class="modal-body text-center">
+                <!-- Gambar Produk -->
+                <img src="gambar/yacht master.png" class="img-fluid rounded mb-3" alt="Rolex Yacht-Master RLX Titanium" style="max-height: 350px; object-fit: cover;">
+                
+                <!-- Deskripsi Produk -->
+                <p class="text-start">
+                    Rolex Yacht-Master RLX Titanium adalah jam tangan mewah yang dirancang untuk para penggemar olahraga air, khususnya yachting. Dengan bahan titanium yang ringan dan tahan lama, jam ini menawarkan kenyamanan dan kekuatan yang optimal. Dikenal dengan desain sporty dan dial yang elegan, Rolex Yacht-Master RLX Titanium adalah simbol kemewahan dan prestise.
+                </p>
+                
+                <!-- Spesifikasi Produk -->
+                <h6 class="fw-bold mt-4">Spesifikasi:</h6>
+                <ul class="text-start">
+                    <li><strong>Model:</strong> Rolex Yacht-Master RLX Titanium</li>
+                    <li><strong>Diameter Kasus:</strong> 42 mm</li>
+                    <li><strong>Material Kasus:</strong> Titanium RLX</li>
+                    <li><strong>Bezel:</strong> Keramik hitam dengan skala 60 menit</li>
+                    <li><strong>Gerakan:</strong> Otomatis (Kaliber 3235)</li>
+                    <li><strong>Fungsi:</strong> Jam, menit, detik, tanggal</li>
+                    <li><strong>Cakupan Tahan Air:</strong> 100 meter</li>
+                    <li><strong>Lengan Tali:</strong> Titanium RLX dengan Oysterflex</li>
+                    <li><strong>Tampilan:</strong> Dial dengan tampilan tanggal dan logo Rolex</li>
+                    <li><strong>Kaca:</strong> Sapphire anti gores</li>
+                    <li><strong>Ketahanan:</strong> 70 jam cadangan daya</li>
+                    <li><strong>Harga:</strong> Rp. 545.000.000</li>
+                </ul>
+                
+                <!-- Tombol -->
+                <a href="cekot.html" class="btn btn-primary mt-3">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Logo dan Deskripsi -->
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold">Ming - Watch</h5>
+                <p>Toko jam tangan mewah terpercaya. Temukan koleksi jam tangan terbaik dari merek ternama dunia.</p>
+            </div>
+
+            <!-- Navigasi Cepat -->
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold">Navigasi Cepat</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Beranda</a></li>
+                    <li><a href="#produk" class="text-light text-decoration-none">Koleksi Produk</a></li>
+                    <li><a href="#filter" class="text-light text-decoration-none">Filter Produk</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Kontak Kami</a></li>
+                </ul>
+            </div>
+
+            <!-- Informasi Kontak -->
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold">Hubungi Kami</h5>
+                <p><i class="bi bi-geo-alt-fill me-2"></i>Jalan Sudirman No. 123, Jakarta</p>
+                <p><i class="bi bi-telephone-fill me-2"></i>+62 812 3456 7890</p>
+                <p><i class="bi bi-envelope-fill me-2"></i>support@mingwatch.com</p>
+                <div>
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-light">
+        <div class="text-center">
+            <p class="mb-0">&copy; 2025 Ming - Watch. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>

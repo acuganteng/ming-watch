@@ -1,0 +1,38 @@
+.navbar1 {
+    background-color: burlywood;
+}
+
+.navbarsearch {
+    background-color: azure;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.hover-effect{
+    transition: transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.hover-effect:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.gambar-jeremi,
+.gambar-logo {
+    width: 40%;
+}
+
+.gambar-jeremi:hover,
+.gambar-logo:hover {
+    cursor: pointer;
+}
+
+.gambar-logo {
+    display: none;
+}

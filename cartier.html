@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartier - MingWatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleRolex.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-light navbar1 border-bottom">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="main.html">Ming - Watch</a>
+    
+            <!-- Toggle button for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold" aria-current="page" href="main.html">Utama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html#produk-unggulan">Produk Unggulan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="game.html">Game</a>
+                    </li>
+                </ul>
+    
+                <!-- Search Bar -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section id="filter" class="container my-5">
+        <h2 class="text-center my-4">Filter Produk</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Harga</h5>
+                        <select class="form-select" aria-label="Harga Filter">
+                            <option selected>Pilih Rentang Harga</option>
+                            <option value="1">Rp. 0 - Rp. 5.000.000</option>
+                            <option value="2">Rp. 5.000.000 - Rp. 10.000.000</option>
+                            <option value="3">Rp. 10.000.000 - Rp. 50.000.000</option>
+                            <option value="4">Rp. 50.000.000+</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Status</h5>
+                        <select class="form-select" aria-label="Status Filter">
+                            <option selected>Pilih Status</option>
+                            <option value="1">Tersedia</option>
+                            <option value="2">Habis</option>
+                            <option value="3">Pre-order</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk" class="container my-5">
+        <h3 class="text-center my-5"><img src="gambar/Cartier-Emblem.png" alt="Cartier" width="15%"></h3>
+        <div class="row">
+            <!-- Produk 1 -->
+            <div class="col-md-4">
+                <div class="card hover-effect">
+                    <img src="gambar/cartier panthere.avif" class="card-img-top" alt="Produk 2" style="height: 350px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#modalPanthere">
+                    <div class="card-body">
+                        <h5 class="card-title">Cartier Panthere Steel</h5>
+                        <p class="card-text">Rp. 87.000.000</p>
+                        <a href="cekot.html" class="btn btn-primary">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produk 2 -->
+            <div class="col-md-4">
+                <div class="card hover-effect">
+                    <img src="gambar/cart santos.webp" class="card-img-top" alt="Produk 2" style="height: 350px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#modalSantos100">
+                    <div class="card-body">
+                        <h5 class="card-title">Cartier Santos 100</h5>
+                        <p class="card-text">Rp. 191.200.000</p>
+                        <a href="cekot.html" class="btn btn-primary">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produk 3 -->
+            <div class="col-md-4">
+                <div class="card hover-effect">
+                    <img src="gambar/cart tank.webp" class="card-img-top" alt="Produk 3" style="height: 350px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#modalTankLouisBlue">
+                    <div class="card-body">
+                        <h5 class="card-title">Cartier Tank Louis (Blue)</h5>
+                        <p class="card-text">Rp. 180.000.000</p>
+                        <a href="cekot.html" class="btn btn-primary">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Panthère -->
+<div class="modal fade" id="modalPanthere" tabindex="-1" aria-labelledby="modalPanthereLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Header Modal -->
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="modalPanthereLabel">Spesifikasi Cartier Panthère Watch</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Body Modal -->
+            <div class="modal-body text-center">
+                <!-- Gambar Produk -->
+                <img src="gambar/cartier panthere.avif" class="img-fluid rounded mb-3" alt="Cartier Panthère" style="max-height: 350px; object-fit: cover;">
+                
+                <!-- Deskripsi Produk -->
+                <p class="text-start">
+                    Cartier Panthère adalah jam tangan yang dirancang untuk wanita modern yang menghargai keanggunan dan kemewahan. Dikenal dengan desainnya yang ikonik, jam ini memiliki bentuk casing yang ramping dengan rantai gelang yang fleksibel, menciptakan tampilan yang memadukan gaya klasik dan modern.
+                </p>
+                <p class="text-start">
+                    Dengan material berkualitas tinggi seperti emas 18k, stainless steel, atau kombinasi keduanya, Cartier Panthère adalah simbol keanggunan abadi. Cocok untuk acara formal maupun kasual, jam tangan ini tidak hanya menjadi aksesori, tetapi juga pernyataan gaya.
+                </p>
+                
+                <!-- Spesifikasi Produk -->
+                <h6 class="fw-bold mt-4">Spesifikasi:</h6>
+                <ul class="text-start">
+                    <li><strong>Model:</strong> Cartier Panthère de Cartier</li>
+                    <li><strong>Diameter Kasus:</strong> 22 mm atau 27 mm (tergantung model)</li>
+                    <li><strong>Material Kasus:</strong> Stainless steel atau emas 18k (variasi kombinasi tersedia)</li>
+                    <li><strong>Bezel:</strong> Polos atau bertatahkan berlian</li>
+                    <li><strong>Gerakan:</strong> Quartz (presisi tinggi)</li>
+                    <li><strong>Fungsi:</strong> Jam dan menit</li>
+                    <li><strong>Cakupan Tahan Air:</strong> Hingga 30 meter</li>
+                    <li><strong>Gelang:</strong> Rantai fleksibel dengan material stainless steel atau emas</li>
+                    <li><strong>Tampilan:</strong> Dial dengan angka Romawi dan jarum berbentuk pedang</li>
+                    <li><strong>Kaca:</strong> Sapphire anti gores</li>
+                    <li><strong>Ketahanan:</strong> Tidak memerlukan pengaturan ulang yang sering</li>
+                    <li><strong>Harga:</strong> Rp. 87.000.000</li>
+                </ul>
+                
+                <!-- Tombol -->
+                <a href="cekot.html" class="btn btn-primary mt-3">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Cartier Santos 100 -->
+<div class="modal fade" id="modalSantos100" tabindex="-1" aria-labelledby="modalSantos100Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Header Modal -->
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="modalSantos100Label">Spesifikasi Cartier Santos 100</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Body Modal -->
+            <div class="modal-body text-center">
+                <!-- Gambar Produk -->
+                <img src="gambar/cart santos.webp" class="img-fluid rounded mb-3" alt="Cartier Santos 100" style="max-height: 350px; object-fit: cover;">
+                
+                <!-- Deskripsi Produk -->
+                <p class="text-start">
+                    Cartier Santos 100 adalah jam tangan legendaris yang terkenal dengan desain kotak ikoniknya, yang pertama kali diperkenalkan pada tahun 1904. Jam ini dirancang oleh Cartier untuk pionir penerbangan Alberto Santos-Dumont. Dengan desain yang elegan dan kepraktisan, Cartier Santos 100 menjadi simbol kemewahan dan ketepatan waktu.
+                </p>
+                
+                <!-- Spesifikasi Produk -->
+                <h6 class="fw-bold mt-4">Spesifikasi:</h6>
+                <ul class="text-start">
+                    <li><strong>Model:</strong> Cartier Santos 100</li>
+                    <li><strong>Diameter Kasus:</strong> 38.4 mm</li>
+                    <li><strong>Material Kasus:</strong> Stainless steel atau 18k emas</li>
+                    <li><strong>Bezel:</strong> Stainless steel, terintegrasi dengan bentuk kotak</li>
+                    <li><strong>Gerakan:</strong> Otomatis (Kaliber 1847 MC)</li>
+                    <li><strong>Fungsi:</strong> Jam, menit, detik, tanggal</li>
+                    <li><strong>Cakupan Tahan Air:</strong> 100 meter</li>
+                    <li><strong>Lengan Tali:</strong> Stainless steel atau kulit, tergantung model</li>
+                    <li><strong>Tampilan:</strong> Dial persegi dengan angka Romawi dan indeks</li>
+                    <li><strong>Kaca:</strong> Sapphire anti gores</li>
+                    <li><strong>Ketahanan:</strong> 42 jam cadangan daya</li>
+                    <li><strong>Harga:</strong> Rp. 191.200.000</li>
+                </ul>
+                
+                <!-- Tombol -->
+                <a href="cekot.html" class="btn btn-primary mt-3">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Cartier Tank Louis Blue -->
+<div class="modal fade" id="modalTankLouisBlue" tabindex="-1" aria-labelledby="modalTankLouisBlueLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Header Modal -->
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="modalTankLouisBlueLabel">Spesifikasi Cartier Tank Louis Blue</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Body Modal -->
+            <div class="modal-body text-center">
+                <!-- Gambar Produk -->
+                <img src="gambar/cart tank.webp" class="img-fluid rounded mb-3" alt="Cartier Tank Louis Blue" style="max-height: 350px; object-fit: cover;">
+                
+                <!-- Deskripsi Produk -->
+                <p class="text-start">
+                    Cartier Tank Louis Blue adalah jam tangan klasik yang menjadi simbol elegansi dan keanggunan. Dikenal dengan desain persegi panjangnya yang ikonik, Cartier Tank pertama kali diluncurkan pada tahun 1917 dan menjadi pilihan favorit para bangsawan dan tokoh terkenal. Dengan desain yang timeless, Cartier Tank Louis Blue menggabungkan material mewah dan teknologi mutakhir.
+                </p>
+                
+                <!-- Spesifikasi Produk -->
+                <h6 class="fw-bold mt-4">Spesifikasi:</h6>
+                <ul class="text-start">
+                    <li><strong>Model:</strong> Cartier Tank Louis Blue</li>
+                    <li><strong>Diameter Kasus:</strong> 33.7 mm x 25.5 mm</li>
+                    <li><strong>Material Kasus:</strong> Emas 18k atau Stainless steel</li>
+                    <li><strong>Bezel:</strong> Emas 18k atau Stainless steel</li>
+                    <li><strong>Gerakan:</strong> Kuarsa (Quartz)</li>
+                    <li><strong>Fungsi:</strong> Jam, menit</li>
+                    <li><strong>Cakupan Tahan Air:</strong> 30 meter</li>
+                    <li><strong>Lengan Tali:</strong> Kulit asli atau stainless steel</li>
+                    <li><strong>Tampilan:</strong> Dial dengan angka Romawi, jarum biru, dan kaca safir</li>
+                    <li><strong>Kaca:</strong> Sapphire anti gores</li>
+                    <li><strong>Ketahanan:</strong> Tidak ada cadangan daya karena menggunakan mekanisme kuarsa</li>
+                    <li><strong>Harga:</strong> Rp. 180.000.000</li>
+                </ul>
+                
+                <!-- Tombol -->
+                <a href="cekot.html" class="btn btn-primary mt-3">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Logo dan Deskripsi -->
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold">Ming - Watch</h5>
+                <p>Toko jam tangan mewah terpercaya. Temukan koleksi jam tangan terbaik dari merek ternama dunia.</p>
+            </div>
+
+            <!-- Navigasi Cepat -->
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold">Navigasi Cepat</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Beranda</a></li>
+                    <li><a href="#produk" class="text-light text-decoration-none">Koleksi Produk</a></li>
+                    <li><a href="#filter" class="text-light text-decoration-none">Filter Produk</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Kontak Kami</a></li>
+                </ul>
+            </div>
+
+            <!-- Informasi Kontak -->
+            <div class="col-md-4 mb-3">
+                <h5 class="fw-bold">Hubungi Kami</h5>
+                <p><i class="bi bi-geo-alt-fill me-2"></i>Jalan Sudirman No. 123, Jakarta</p>
+                <p><i class="bi bi-telephone-fill me-2"></i>+62 812 3456 7890</p>
+                <p><i class="bi bi-envelope-fill me-2"></i>support@mingwatch.com</p>
+                <div>
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-light">
+        <div class="text-center">
+            <p class="mb-0">&copy; 2025 Ming - Watch. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Bootstrap Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
